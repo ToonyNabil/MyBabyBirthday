@@ -1,0 +1,6 @@
+{
+  "name": "عيد ميلاد بنوتي",
+  "description": "صفحة العد التنازلي لعيد ميلاد بنوتي ليوم 15/10/2026 مع تصميم احتفالي دافئ ورومانسي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

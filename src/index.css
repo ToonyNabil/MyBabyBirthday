@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+@keyframes float-heart {
+  0% {
+    transform: translateY(0) scale(0.8) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.75;
+  }
+  85% {
+    opacity: 0.65;
+  }
+  100% {
+    transform: translateY(-110vh) scale(1.15) rotate(25deg);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-gentle {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 15px rgba(244, 63, 94, 0.45));
+  }
+  50% {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 28px rgba(251, 113, 133, 0.8));
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.animate-pulse-gentle {
+  animation: pulse-gentle 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.text-gold-glow {
+  text-shadow: 0 0 20px rgba(251, 191, 36, 0.6), 0 0 40px rgba(245, 158, 11, 0.3);
+}
+
+.text-rose-glow {
+  text-shadow: 0 0 15px rgba(251, 113, 133, 0.7), 0 0 30px rgba(225, 29, 72, 0.4);
+}
+
+.box-rose-glow {
+  box-shadow: 0 10px 35px -5px rgba(225, 29, 72, 0.25), 0 0 20px rgba(251, 113, 133, 0.15);
+}
+
+.box-rose-glow-hover:hover {
+  box-shadow: 0 15px 45px -5px rgba(225, 29, 72, 0.4), 0 0 28px rgba(251, 113, 133, 0.3);
+}
