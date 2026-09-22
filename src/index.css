@@ -14,19 +14,27 @@
   font-family: 'Marhey', 'Aref Ruqaa', 'Cairo', cursive !important;
 }
 
-@layer base {
-  html, body {
-    font-family: 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  height: -webkit-fill-available;
+  overflow: hidden !important;
+  overscroll-behavior: none !important;
+  font-family: 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  height: -webkit-fill-available;
+  overflow: hidden;
 }
 
 /* Card soft pink shadow matching image */
 .card-shadow {
-  box-shadow: 0 20px 45px -10px rgba(255, 175, 195, 0.4), 0 0 1px 1px rgba(255, 215, 225, 0.6);
-}
-
-.box-button-shadow {
-  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.25);
+  box-shadow: 0 16px 36px -8px rgba(255, 175, 195, 0.38), 0 0 1px 1px rgba(255, 215, 225, 0.6);
 }
